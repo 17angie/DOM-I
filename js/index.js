@@ -55,4 +55,17 @@ navLinks[3].textContent = siteContent["nav"]["nav-item-4"]
 navLinks[4].textContent = siteContent["nav"]["nav-item-5"]
 navLinks[5].textContent = siteContent["nav"]["nav-item-6"]
 
+const ctaHeading = document.querySelector(".cta .cta-text h1");
+ctaHeading.textContent = siteContent["cta"]["h1"]
+
+const ctaButton = document.querySelector(".cta .cta-text button");
+ctaButton.textContent = siteContent["cta"]["button"]
+
+const subHeadings = document.querySelectorAll("h4");
+subHeadings[0].textContent = siteContent["main-content"]["features-h4"]
+subHeadings[1].textContent = siteContent["main-content"]["about-h4"]
+subHeadings[2].textContent = siteContent["main-content"]["services-h4"]
+subHeadings[3].textContent = siteContent["main-content"]["product-h4"]
+subHeadings[4].textContent = siteContent["main-content"]["vision-h4"]
+subHeadings[5].textContent = siteContent["main-content"]["contact-h4"]
 
