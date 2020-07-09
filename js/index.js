@@ -102,3 +102,7 @@ jobLink.textContent = "Careers"
 jobLink.style.color = 'green'
 
 parentEl.appendChild(jobLink)
+
+const banner = document.querySelector(".container header");
+banner.style.backgroundColor = 'lightcyan'
+document.body.style.backgroundColor = 'deepskyblue'
