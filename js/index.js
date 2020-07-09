@@ -67,5 +67,38 @@ subHeadings[1].textContent = siteContent["main-content"]["about-h4"]
 subHeadings[2].textContent = siteContent["main-content"]["services-h4"]
 subHeadings[3].textContent = siteContent["main-content"]["product-h4"]
 subHeadings[4].textContent = siteContent["main-content"]["vision-h4"]
-subHeadings[5].textContent = siteContent["main-content"]["contact-h4"]
+subHeadings[5].textContent = siteContent["contact"]["contact-h4"]
 
+const description = document.querySelectorAll(".text-content p");
+description[0].textContent = siteContent["main-content"]["features-content"]
+description[1].textContent = siteContent["main-content"]["about-content"]
+description[2].textContent = siteContent["main-content"]["services-content"]
+description[3].textContent = siteContent["main-content"]["product-content"]
+description[4].textContent = siteContent["main-content"]["vision-content"]
+
+const contactInfo = document.querySelectorAll(".contact p");
+contactInfo[0].textContent = siteContent["contact"]["address"]
+contactInfo[1].textContent = siteContent["contact"]["phone"]
+contactInfo[2].textContent = siteContent["contact"]["email"]
+
+const cr = document.querySelector("footer p");
+cr.textContent = siteContent["footer"]["copyright"]
+
+navLinks.forEach(link => {
+  link.style.color = "green"
+})
+
+const homeLink = document.createElement("a");
+homeLink.setAttribute('href', '#')
+homeLink.textContent = "Home"
+homeLink.style.color = 'green'
+
+const parentEl = document.querySelector("nav");
+parentEl.prepend(homeLink)
+
+const jobLink = document.createElement("a");
+jobLink.setAttribute('href', '#')
+jobLink.textContent = "Careers"
+jobLink.style.color = 'green'
+
+parentEl.appendChild(jobLink)
